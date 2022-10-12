@@ -1,0 +1,44 @@
+body{
+    background: gray;
+    margin:0; /*Elimina el margen que viene por defecto*/
+}
+div {
+    -webkit-box-sizing: border-box; /* Elimina un problema de padding de css. Valido para Chrome */
+}
+header{
+    background: white;
+    padding:10px;/*Margen hacia el interior*/
+}
+    header h1 {
+        margin:0; /*Elimina el margen que viene por defecto*/
+        text-align: center;/*Centra el texto*/
+    }
+div.container {
+    width: 600px;
+    margin: auto; /*Sirve para centrar en el ancho*/
+}
+.post{
+    margin-top: 20px;
+    background: white;
+}
+    .post-header div:first-child{/*Selecciona el primer div dentro de post-header*/
+        display: inline-block;/*Para alinear los div*/
+        width: 80%;
+        padding: 10px;
+        margin:0;
+    }
+    .post-header div:last-child{/*selecciona el ultimo*/
+        display: inline-block;
+        width: 20%;
+        text-align: right;
+        padding: 10px;
+        color:gray; /*cambia el color del texto*/
+    }
+    .post img {
+        width: 100%;/*Abarca todo el ancho permitido*/
+        margin: 0;
+    }
+    .post-footer p{
+        margin: 0;
+        padding: 10px;
+    }
